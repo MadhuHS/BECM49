@@ -11,6 +11,17 @@ public class User {
 	private long mobileNum;// write read --> Full access
 	private String role;// write ONLY --> create
 
+
+	public User(String uid, String name, String email, String password, long mobileNum, String role) {
+		super();
+		this.uid = uid;
+		this.name = name;
+		this.email = email;
+		this.password = password;
+		this.mobileNum = mobileNum;
+		this.role = role;
+	}
+
 	//write
 	public void setUid(String uid) {
 		

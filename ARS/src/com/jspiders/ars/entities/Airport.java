@@ -5,6 +5,13 @@ public class Airport {
 	private String airportName;
 	private String abbvrivation;
 	private String location;
+	
+	public Airport(String airportName,String abbvrivation,String location)
+	{
+		this.airportName = airportName;
+		this.abbvrivation = abbvrivation;
+		this.location = location;
+	}
 
 	public String getAirportName() {
 		return airportName;
