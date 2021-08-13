@@ -8,10 +8,16 @@ public class UserService {
 	{
 		User u1 = new User();
 		
-		u1.setUid("uuwodbs");
+		u1.setUid("user1234");
 		u1.setName(name);
+		u1.setEmail(userName);
+		u1.setPassword(password);
+		u1.setMobileNum(mob);
+		u1.setRole("Customer");
 		
-		System.out.println(u1.getName());
+		System.out.println("name      : "+u1.getName());
+		System.out.println("username  : "+u1.getEmail());
+		System.out.println("user Mob  : "+u1.getMobileNum());
 		
 	}
 }

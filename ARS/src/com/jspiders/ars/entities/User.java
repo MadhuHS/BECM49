@@ -13,19 +13,50 @@ public class User {
 
 	//write
 	public void setUid(String uid) {
-		if (uid.length() == 0) {
-			this.uid = uid;
+		
+		if(this.uid == null)
+		{
+		  this.uid = uid;	
+		}
+		else
+		{
+		  System.out.println("ERROR : "+uid+" UID cannot be changed");
 		}
 	}
-	//write
-	public void setName(String name)
-	{
+
+	// write
+	public void setName(String name) {
 		this.name = name;
 	}
-	//read
-	public String getName()
-	{
+
+	// read
+	public String getName() {
 		return this.name;
 	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setMobileNum(long mobileNum) {
+		this.mobileNum = mobileNum;
+	}
+	
+	public long getMobileNum() {
+		return this.mobileNum;
+	}
+	
+	public void setRole(String role) {
+		this.role = role;
+	}
+	
 
 }
