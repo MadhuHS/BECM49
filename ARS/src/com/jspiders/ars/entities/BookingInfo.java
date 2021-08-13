@@ -8,7 +8,7 @@ public class BookingInfo {
 	private String classType;
 	private double totalFare;
 	private int seatNo;
-	private String creditCard;
+	private String creditCard;//Association
 	private String srcCity;
 	private String desCity;
 
